@@ -113,10 +113,10 @@ h4 {
 
 .fam {
 	background-color: rgba(255, 255, 255, 1);
-	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/family.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/fam4.jpg);
 	background-size: cover;
 	background-position: center;
-	height: 100%;
+	height: 80vh;
 	background-attachment: fixed;
 	/* margin-bottom: 5rem; */
 }
@@ -157,6 +157,31 @@ h4 {
 	animation-iteration-count: infinite;
 	border: solid;
 }
+
+
+
+
+.family_card {
+	padding: 35px 5px;
+	border-radius: 10px;
+	background-color: #e6dfe48f;
+	margin: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.family_card:hover {
+	/* animation: beat 0.5s;
+	animation-iteration-count: infinite; */
+	border: solid 2px gray;
+}
+
+.family_margin{
+  margin-bottom: 15rem;
+}
+
+
+
+
 
 .img {
 	/* border: solid; */
@@ -392,7 +417,18 @@ h4 {
 	.card_daily_zoom:hover {
 		transform: scale(.8);
 		transition: transform 0.5s;
-	}
+  }
+  
+  .border-fam {
+    /* border-top: 10px  solid; */
+    /* border-radius: 10px; */
+    margin: 5px;
+  }
+
+  /* .fam-card {
+    margin-bottom: 1rem;
+    
+  } */
 }
 
 @media (max-width: 575px) {
