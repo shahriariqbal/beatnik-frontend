@@ -2,7 +2,6 @@
 	0% {
 		opacity: 0;
 		transform: translateX(-10rem);
-		/* transform: translateX(-100%) rotate(-50deg); */
 	}
 	/* 60% {
         transform: rotate(120deg);
@@ -112,12 +111,9 @@ h4 {
 	text-align: center;
 }
 
-.main_body {
-}
-
 .fam {
 	background-color: rgba(255, 255, 255, 1);
-	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/family.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/family.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100%;
@@ -133,14 +129,8 @@ h4 {
 .border-fam {
 	/* border-top: 10px  solid; */
 	/* border-radius: 10px; */
-
 	margin: 35px;
 }
-
-/* .round {
-    border-radius: 20px;
-    
-  } */
 
 .need {
 	width: 40%;
@@ -224,10 +214,6 @@ h4 {
     border-radius: 10px;
   } */
 
-.border {
-	/* border-style: solid; */
-}
-
 .arr {
 	justify-content: center;
 }
@@ -305,17 +291,16 @@ h4 {
 
 /* *************************************flip box*********************************** */
 
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
 	background-color: transparent;
 	width: 300px;
 	height: 200px;
 	/* border: 1px solid #f1f1f1; */
 	border: 1px;
-	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
+/*  needed to position the front and back side */
 .flip-box-inner {
 	position: relative;
 	width: 100%;
@@ -325,7 +310,7 @@ h4 {
 	transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Do an horizontal flip  */
 .flip-box:hover .flip-box-inner {
 	transform: rotateY(180deg);
 }
@@ -366,59 +351,7 @@ h4 {
 	transition: transform 0.5s;
 }
 
-/* .btn:link, .btn:visited {
-
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all .2s;
-    position: relative;
-    font-size: 1rem; }
-  
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    .btn:hover::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0; }
-  
-  .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-  
-  .btn--white {
-    background-color: rgb(221, 210, 210);
-    color: #777; }
-    .btn--white::after {
-      background-color: #fff; }
-  
-  .btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s; }
-  
-  .btn--animated {
-    animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards; } */
-
-/* ******************************************************************************************* */
-
-/* external css: flickity.css */
-
-/* * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body { font-family: sans-serif; } */
+/* ***********************************flickity******************************************************** */
 
 .gallery {
 	background: #eee;
@@ -442,56 +375,35 @@ body { font-family: sans-serif; } */
 	color: white;
 }
 
-/* ***************************************************************************************************** */
+/* *********************************************media query******************************************************** */
 
 @media (max-width: 992px) {
-  /* body {
-    padding-top: 0;
-    padding-left: 17rem;
-  } */
+	.news_card {
+		margin: 1rem;
+		padding: 1rem;
+	}
 
-  .news_card{
-    margin: 1rem;
-    padding: 1rem;
-  }
+	.btn_custom {
+		width: 15%;
+		margin: 0 auto;
+		margin-top: 2rem;
+	}
 
-  .btn_custom {
-    width: 15%;
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
-
-  .card_daily_zoom:hover {
-    transform: scale(.8);
-    transition: transform 0.5s;
-  }
-
-
+	.card_daily_zoom:hover {
+		transform: scale(.8);
+		transition: transform 0.5s;
+	}
 }
 
 @media (max-width: 575px) {
+	.zoom:hover {
+		transform: scale(.8);
+		transition: transform 0.5s;
+	}
 
-  /* .card_daily:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-    border: 10px rgb(95, 94, 97) solid;
-  } */
-  
-  /* .card_daily_zoom {
-    width: 350px;
-  } */
-  
-
-
-  .zoom:hover {
-    transform: scale(.8);
-    transition: transform 0.5s;
-  }
-
-  .btn_custom {
-    width: 25%;
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
- 
+	.btn_custom {
+		width: 25%;
+		margin: 0 auto;
+		margin-top: 2rem;
+	}
 }
