@@ -113,7 +113,7 @@ h4 {
 
 .fam {
 	background-color: rgba(255, 255, 255, 1);
-	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/fam4.jpg);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/fam.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 80vh;
